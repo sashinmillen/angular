@@ -1,0 +1,100 @@
+.box1 {
+    width: 400px;
+}
+
+.box2 {
+    width: 360px;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border:solid black 1px;
+}
+
+.avatar1 {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border:solid black 1px;
+}
+
+.oo {
+    padding-left: 0px;
+}
+
+.contact {
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.contact1 {
+    background-color: #ffe6e6;
+    border-radius: 5px 5px 5px 5px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.campain{
+    border-radius: 5px;
+    border: solid black 1px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 140px;
+    height: 25px;
+}
+
+.preview {
+    border-radius: 5px;
+    border: solid black 1px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    width: 65px;
+    height: 25px;
+}
+
+.Migrated {
+    border-radius: 5px;
+    border: solid black 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    width: 70px;
+    height: 20px;
+    background-color: #2d862d;
+}
+
+.greendot{
+    border-radius: 100%;
+    background-color: green;
+    width: 10px;
+    height: 10px;
+}
+
+/*table, th {
+    border: 1px solid black;
+  }
+*/
+  table {
+    width: 100%;
+  }
+
+  .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+.input-group-text {
+    background-color: white;
+}
