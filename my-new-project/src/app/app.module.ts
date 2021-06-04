@@ -1,37 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { CardOneComponent } from './card-one/card-one.component';
-import { CardTwoComponent } from './card-two/card-two.component';
-import { CardThreeComponent } from './card-three/card-three.component';
-
-import { CardFiveComponent } from './card-five/card-five.component';
-import { CardSixComponent } from './card-six/card-six.component';
-import { CardSevenComponent } from './card-seven/card-seven.component';
-import { CardEightComponent } from './card-eight/card-eight.component';
 import { NameListComponent } from './name-list/name-list.component';
 import { AllReferrersComponent } from './all-referrers/all-referrers.component';
-
+import { CardsComponent } from './cards/cards.component';
+import { TutorialsComponent } from './tutorials/tutorials.component';
+import { Child1Component } from './child1/child1.component';
+import { ParentComponent } from './parent/parent.component';
+import { Child2Component } from './child2/child2.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    CardOneComponent,
-    CardTwoComponent,
-    CardThreeComponent,
-
-    CardFiveComponent,
-    CardSixComponent,
-    CardSevenComponent,
-    CardEightComponent,
     NameListComponent,
-    AllReferrersComponent
+    AllReferrersComponent,
+    CardsComponent,
+    TutorialsComponent,
+    Child1Component,
+    ParentComponent,
+    Child2Component,
+    SearchBoxComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

@@ -3,11 +3,11 @@ import {COURSES} from '../../environments/db-data';
 import { Course } from '../model/course';
 
 @Component({
-  selector: 'app-all-referrers',
-  templateUrl: './all-referrers.component.html',
-  styleUrls: ['./all-referrers.component.css']
+  selector: 'app-cards',
+  templateUrl: './cards.component.html',
+  styleUrls: ['./cards.component.css']
 })
-export class AllReferrersComponent implements OnInit {
+export class CardsComponent implements OnInit {
 
   @Input()
   course!: Course;

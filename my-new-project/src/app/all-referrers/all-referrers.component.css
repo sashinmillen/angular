@@ -24,6 +24,10 @@
     padding-left: 0px;
 }
 
+.two {
+    width: 30px;
+}
+
 .contact {
     padding: 0px 0px;
     margin: 0px 0px;
@@ -97,4 +101,8 @@
 
 .input-group-text {
     background-color: white;
+}
+
+.td.pt-3 {
+    padding: 0px 0 0 0;
 }
