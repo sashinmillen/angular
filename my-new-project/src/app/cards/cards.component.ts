@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {COURSES} from '../../environments/db-data';
+import { COURSES } from '../model/db-data';
 import { Course } from '../model/course';
 
 @Component({
@@ -12,7 +12,9 @@ export class CardsComponent implements OnInit {
   @Input()
   course!: Course;
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
   }

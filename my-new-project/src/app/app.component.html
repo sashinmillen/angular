@@ -1,3 +1,5 @@
+
+
 <div class="container-fluid mt-3">
     <app-main></app-main>
   <div class="courses">
@@ -28,6 +30,7 @@
 
 
 <div class="container-fluid">
+
   <div class="d-flex row pl-4">
     <div class="box1">
       
@@ -38,7 +41,34 @@
     </div>
 
     <div class="col-8">
-      
+      <div class="container row">
+        <div class="col-1">
+            <img src="avatar.jpg" class="avatar1" alt="">
+        </div>
+    
+        <div class="colomn mb-3">
+            <div><h4>All Referrers list</h4></div>
+            <div><h6 class="text-secondary">53 people refferred</h6></div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-3 border-right">
+              <app-cards [course]="card7"></app-cards>
+          </div>
+          <div class="col-3">
+              <app-cards [course]="card8"></app-cards>
+          </div>
+      </div>
+  
+      <div class="col-10 pt-3 d-flex justify-content-start">
+          <app-search-box></app-search-box>
+      </div>
+
+      <hr>
+
       <app-all-referrers></app-all-referrers>
 
     </div>
+</div>
