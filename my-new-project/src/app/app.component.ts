@@ -8,4 +8,21 @@ import {COURSES} from './model/db-data';
 })
 export class AppComponent {
 
+  card1 = COURSES[0];
+
+  card2 = COURSES[1];
+
+  card3 = COURSES[2];
+
+  card4 = COURSES[3];
+
+  card5 = COURSES[4];
+
+  card6 = COURSES[5];
+
+  card7 = COURSES[6];
+
+  card8 = COURSES[7];
+
 }
+
