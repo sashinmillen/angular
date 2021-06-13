@@ -9,18 +9,8 @@ import { Course } from '../model/loop-data';
 })
 export class ContactSubDataComponent {
 
-  card1 = COURSES[0];
-  
-  card2 = COURSES[1];
+  constructor() {
 
-  card3 = COURSES[2];
-
-  card4 = COURSES[3];
-
-  card5 = COURSES[4];
-
-  card6 = COURSES[5];
-
-  constructor() { }
+   }
 
 }
