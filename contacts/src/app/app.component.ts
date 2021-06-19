@@ -7,6 +7,18 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  username: string ="Enter Name"
+
+  userlist = []
+
+  onclick(prouser){
+    this.userlist.push(prouser)
+  }
+  
+
+  /*main details*/
+  
   users = null
   title = 'contacts';
   selectedUser;
@@ -26,6 +38,5 @@ export class AppComponent {
     console.log(user)
     this.selectedUser = user;
   }
-
-
+  
 }

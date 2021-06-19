@@ -8,3 +8,61 @@
     </div>
   </div>
 </div>
+
+
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div
+        class="panel panel-default"
+        *ngFor="let element of contactElements">
+        <div class="panel-heading">{{ element.name }}</div>
+        <div class="panel-body">
+
+          <p>
+
+            this is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga asperiores, odit, nobis cupiditate omnis veritatis iure aspernatur deleniti sint laborum alias hic! Vitae, vel saepe illum incidunt ratione officia porro?
+
+              {{ element.name }} hello
+           
+              {{ element.content }} hiii
+            
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="container">
+  <div class="">
+    <div class="col-sm-4">
+
+      <label>New User Name</label>
+      <input #myuser type="text" class="form-control" [placeholder]="username">
+
+      <label>E-mail</label>
+      <input type="text" class="form-control">
+
+      <br>
+
+      <button
+        class="btn btn-danger"
+        (click)="onclick(myuser)">Add User
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<div *ngfor="let i of userlist; index as userno">
+<p>{{userno}} hello</p>
+
+</div>
+
+
+
+<my-app></my-app>
