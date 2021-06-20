@@ -4,28 +4,8 @@
     <div class="col-sm-4">
       <app-users [list]="users" (onUserClicked)="onUserComponentClicked($event)" ></app-users>
 
-        <label>User Name</label>
-          <input type="text" class="form-control mb-3" placeholder="Enter Your Name" [(ngModel)]="newServerName">
-
-        <label>E-Mail</label>
-        <input type="text" class="form-control" placeholder="Enter Your E-Mail" [(ngModel)]="newServerContent">
-
-        <br>
-        <button
-          class="btn btn-primary"
-          (click)="onAddServer()">Add User
-        </button>
-
-        <div
-        class="panel panel-default"
-        *ngFor="let element of serverElements">
-        <div class="panel-heading">{{ element.name }}</div>
-        <div class="panel-body">
-          <p>
-            <strong *ngIf="element.type === 'server'" >{{ element.content }}</strong>
-          </p>
-        </div>
-      </div>
+      <app-add-new></app-add-new>
+      
     </div>
 
     <div class="col-sm-8">

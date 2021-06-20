@@ -13,12 +13,14 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { DetailViewComponent } from './detail-view/detail-view.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddNewComponent } from './add-new/add-new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     DetailViewComponent,
+    AddNewComponent,
   ],
   imports: [
     HttpClientModule,
