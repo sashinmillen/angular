@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
 
 import { ControlValueAccessor } from "@angular/forms";
 import { Directive } from "@angular/core";
@@ -11,15 +13,12 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { DetailViewComponent } from './detail-view/detail-view.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { MyAppComponent } from './my-app/my-app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     DetailViewComponent,
-    MyAppComponent,
   ],
   imports: [
     HttpClientModule,

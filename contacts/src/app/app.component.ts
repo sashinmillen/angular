@@ -8,17 +8,8 @@ import { AppService } from './app.service';
 })
 export class AppComponent {
 
-  username: string ="Enter Name"
-
-  userlist = []
-
-  onclick(prouser){
-    this.userlist.push(prouser)
-  }
-  
-
   /*main details*/
-  
+
   users = null
   title = 'contacts';
   selectedUser;
@@ -37,6 +28,18 @@ export class AppComponent {
   onUserComponentClicked(user){
     console.log(user)
     this.selectedUser = user;
+  }
+
+  serverElements = [];
+  newServerName = '';
+  newServerContent = '';
+
+  onAddServer() {
+    this.serverElements.push({
+      type: 'server',
+      name: this.newServerName,
+      content: this.newServerContent
+    });
   }
   
 }
