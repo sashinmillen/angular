@@ -11,8 +11,9 @@ export class AddNewComponent implements OnInit {
   newServerName = '';
   newServerContent = '';
 
-  onAddServer() {
-    this.serverElements.push({
+  onClick(myuser: { value: any; }) {
+    this.serverElements.push(myuser.value);
+    ({
       type: 'server',
       name: this.newServerName,
       content: this.newServerContent

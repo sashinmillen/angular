@@ -14,6 +14,7 @@ import { UsersComponent } from './users/users.component';
 import { DetailViewComponent } from './detail-view/detail-view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddNewComponent } from './add-new/add-new.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AddNewComponent } from './add-new/add-new.component';
     UsersComponent,
     DetailViewComponent,
     AddNewComponent,
+    NewUserComponent,
   ],
   imports: [
     HttpClientModule,
