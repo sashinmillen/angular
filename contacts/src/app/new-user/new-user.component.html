@@ -3,9 +3,12 @@
     <div class="row">
         <div class="col-md-12">
 
+            user name
             <input #myuser class="form-control" type="text">
 
+            email
             <input #myuser class="form-control" type="text">
+
             <button class="btn btn-danger mt-3" (click)="onclick(myuser)">add user</button>
 
             <table class="table-light table">
@@ -14,6 +17,7 @@
                         <th>user name</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr *ngFor="let i of userlist">
                         <td>{{i}}</td>
