@@ -11,13 +11,16 @@ export class AddNewComponent implements OnInit {
   newServerName = '';
   newServerContent = '';
 
-  onClick(myuser: { value: any; }) {
-    this.serverElements.push(myuser.value);
+  onClick() {
+    this.serverElements.push
     ({
       type: 'server',
       name: this.newServerName,
       content: this.newServerContent
     });
+
+    this.newServerName = ''
+    this.newServerContent = ''
   }
 
   constructor() { }
