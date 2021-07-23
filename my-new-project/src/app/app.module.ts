@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { CardsSubDataComponent } from './cards/cards-sub-data/cards-sub-data.component';
 import { ContactSubDataComponent } from './contact-list/contact-sub-data/contact-sub-data.component';
+import { AddNewComponent } from './add-new/add-new.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ContactSubDataComponent } from './contact-list/contact-sub-data/contact
     ContactListComponent,
     CardsSubDataComponent,
     ContactSubDataComponent,
+    AddNewComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
