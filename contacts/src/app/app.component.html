@@ -1,11 +1,24 @@
+<div class="container mt-5">
+  <app-add-new></app-add-new>
+</div>
+
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 border rounded-5 border-1 border-secondary">
       <app-users [list]="users" (onUserClicked)="onUserComponentClicked($event)" ></app-users>
     </div>
 
-    <div class="col-sm-8">
-      <app-add-new></app-add-new>
-      <app-detail-view [user]="selectedUser"></app-detail-view>
+    <div class="col-sm-8 mb-3 pb-5">
+      <div class="border rounded-5 border-1 border-secondary" style="height: 600px;">
+        <div class="container">
+          <h3 class="d-flex justify-content-center pt-5">Details</h3>
+          <div class="d-flex justify-content-center pt-2">
+            <app-detail-view [user]="selectedUser"></app-detail-view>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+  
+  

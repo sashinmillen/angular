@@ -1,26 +1,45 @@
-<label>User Name</label>
-    <input type="text" class="form-control mb-3" id="number" placeholder="Enter Your Name" [(ngModel)]="newServerName">
-
-<label>E-Mail</label>
-    <input type="text" class="form-control" id="number" placeholder="Enter Your E-Mail" [(ngModel)]="newServerContent">
-
-<br>
-
-<button
-    class="btn btn-primary"
-    (click)="onClick()">Add User
-</button>
-
-<div class="panel panel-default" *ngFor="let element of serverElements">
-    <div class="panel-heading">
-        {{ element.name }}
-    </div>
-
-    <div class="panel-body">
-        <p>
-            <strong *ngIf="element.type === 'server'" >
-                {{ element.content }}
-            </strong>
-        </p>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
+                    <h2>Add New User</h2>
+                    <div class="form-group">
+                        <label for="username">
+                            User Name
+                        </label>
+                        <input type="text" placeholder="Enter Your Name Here" id="username" class="form-control" ngModel name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            E-Mail
+                        </label>
+                        <input type="email" id="email" placeholder="Enter Your E-Mail Here" class="form-control" ngModel name="email" required email #email="ngModel">
+                        <span class="help-block" *ngIf="!email.valid && email.touched">
+                            Please enter a valid email!
+                        </span>
+                    </div>
+                </div>
+            
+            <div class="radio" *ngFor="let gender of genders">
+                <label>
+                <input type="radio" name="gender" ngModel [value]="gender" required>
+                    {{ gender }}
+                </label>
+            </div>
+                <p *ngIf="!userData.valid && userData.touched">User Data is invalid!</p>
+                <button class="btn btn-primary my-3" type="submit" [disabled]="!form.valid">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="col-5" *ngIf="submitted">
+                <h3 class="">Your Data</h3>
+                <p>User Name:<br> {{ user.username }}</p>
+                <p>E-Mail   :<br> {{ user.email }}</p>
+                <p>Gender   :<br> {{ user.gender }}</p>
+        </div>
     </div>
 </div>
+
+<!--col-7 border border-secondary-->

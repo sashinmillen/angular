@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-add-new',
@@ -7,20 +8,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddNewComponent implements OnInit {
 
-  serverElements = [];
-  newServerName = '';
-  newServerContent = '';
+  @ViewChild('form', { static: false }) signupForm: NgForm;
 
-  onClick() {
-    this.serverElements.push
-    ({
-      type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
+  genders = ['male', 'female'];
+  user = { 
+    username: '',
+    email: '',
+    gender: ''
+  };
+  submitted = false;
 
-    this.newServerName = ''
-    this.newServerContent = ''
+  suggestUserName() {
+    // this.signupForm.setValue({
+    //   userData: {
+    //     username: suggestedName,
+    //     email: ''
+    //   },
+    //   secret: 'pet',
+    //   questionAnswer: '',
+    //   gender: 'male'
+    // });
+    // this.signupForm.form.patchValue({
+    // });
+  }
+
+  // onSubmit(form: NgForm) {
+  //   console.log(form);
+  // }
+
+  onSubmit() {
+    this.submitted = true;
+    this.user.username = this.signupForm.value.userData.username;
+    this.user.email = this.signupForm.value.userData.email;
+    this.user.gender = this.signupForm.value.gender;
+
+    this.signupForm.reset();
   }
   constructor() { }
 
